@@ -2,7 +2,8 @@ parser: babel-eslint
 env:
   browser: true
   es6: true
-extends: 'eslint:recommended'
+extends: 
+  - eslint:recommended
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -21,6 +22,7 @@ rules:
   quotes:
     - error
     - single
+  no-unused-vars: 0
   semi:
     - error
     - always
